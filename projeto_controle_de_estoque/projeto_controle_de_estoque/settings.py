@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'home',
+    'produtos'
 ]
 
 MIDDLEWARE = [
@@ -77,13 +78,15 @@ WSGI_APPLICATION = 'projeto_controle_de_estoque.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'djongo',
-        'NAME': 'estoque', 
-        'ENFORCE_SCHEMA': False,
+        'NAME': 'estoque',  
         'CLIENT': {
-            'host': 'mongodb+srv://rayaneksilva:7iWtMfOxkEMpH869@estoque.he7so.mongodb.net/estoque?retryWrites=true&w=majority'
+            'host': 'mongodb+srv://rayaneksilva:lToM64smenMfQqKB@estoque.he7so.mongodb.net/estoque?retryWrites=true&w=majority',
+            'username': 'rayaneksilva',
+            'password': 'lToM64smenMfQqKB',
         }
     }
 }
+
 
 
 
